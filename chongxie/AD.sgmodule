@@ -1,5 +1,5 @@
 #!name=去广告联盟（可乐修改版）
-#!desc=更新：2022-11-18 07:23:08
+#!desc=更新：2022-11-24 17:42:11
 #!system=ios
 
 [Rule]
@@ -1003,9 +1003,6 @@ URL-REGEX,^https?+:\/\/xyst\.yuanfudao\.com\/iphone\/splashesV\d,REJECT
 URL-REGEX,^https?+:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$,REJECT
 # > 叮嗒出行
 URL-REGEX,^https?:\/\/img\.admobile\.top\/admobile-adRequest\/.*.(jpg|png),REJECT
-# > 酷安
-URL-REGEX,^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk,REJECT
-URL-REGEX,^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch,REJECT
 # > 大智慧
 URL-REGEX,^https?://ssp\.dzh\.com\.cn/v2api/adgroupjson,REJECT
 # > 冠寓开屏广告@ddgksf2013
