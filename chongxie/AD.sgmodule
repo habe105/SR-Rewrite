@@ -1,10 +1,11 @@
 #!name=去广告联盟（可乐修改版）
-#!desc=更新：2022-11-25 12:06:53
+#!desc=更新：2022-11-25 13:01:50
 #!system=ios
 
 [Rule]
 # >QQ音乐
 URL-REGEX,^https:\/\/pgdt\.gtimg\.cn\/141\/20204\/snscosdownload\/SZ\/reserved\/[A-Za-z0-9]{48}\?m=\[A-Za-z0-9]{32}&ck=\[A-Za-z0-9]{32}\&sha256=\[A-Za-z0-9]{64},REJECT
+URL-REGEX,^https:\/\/pgdt\.gtimg\.cn\/\d{3}\/\d{5}\/snscosdownload\/[A-Z]+\/reserved\/[A-Za-z0-9]{48}\?m=\[A-Za-z0-9]{32}&ck=\[A-Za-z0-9]{32}\&sha256=\[A-Za-z0-9]{64},REJECT
 # >腾讯加速器
 URL-REGEX,^http:\/\/dldir1\.qq\.com\/INO\/img\/speedm\/[A-Za-z0-9]+\.jpg,REJECT
 # >中国移动
