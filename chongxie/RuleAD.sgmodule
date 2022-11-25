@@ -32,7 +32,7 @@ DOMAIN-KEYWORD, p26-be-pack-sign.pglstatp-toutiao.com,REJECT
 DOMAIN-KEYWORD, assets.51downapp.cn,REJECT
 # > 叮嗒出行
 DOMAIN-KEYWORD, image.bianxianmao.com,REJECT
-ip-cidr, 203.107.1.1/24,REJECT,no-resolve
+IP-CIDR,203.107.1.1/24,REJECT,no-resolve
 # > VIVO商城
 DOMAIN-KEYWORD, paradisestatic.vivo.com.cn,REJECT
 # > 酷安
