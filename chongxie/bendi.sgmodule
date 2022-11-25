@@ -1,5 +1,5 @@
 #!name=kele自制去广告
-#!desc=其他去广告  2022-11-15 16:56:54
+#!desc=其他去广告  2022-11-25 20:52:18
 #!system=ios
 
 [Rule]
@@ -28,8 +28,5 @@ URL-REGEX,^https?:\/\/static\.zhihu\.com\/[^\/]+\/(main|column)\.signflow\.[^.]+
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ - reject
 ^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ - reject
 
-[Script]
-彩云VIP= type=http-response,pattern=^https:\/\/((weather-data\.apple)|(api.weather))\.com ,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
-
 [MITM]
-hostname = %APPEND% *.taobao.com, api.weibo.com, niz.caiyunapp.com, baidu,com, api-web.cdn.flydigi.com, heic.alicdn.com, static.zhihu.com
+hostname = %APPEND% *.taobao.com, api.weibo.com, baidu,com, api-web.cdn.flydigi.com, heic.alicdn.com, static.zhihu.com
