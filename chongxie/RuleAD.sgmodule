@@ -705,17 +705,17 @@ DOMAIN-KEYWORD, client-dmp.suishenyun.cn,REJECT
 DOMAIN-KEYWORD, pc.suishenyun.net,REJECT
 DOMAIN-KEYWORD, v0-client-lz.rili.cn,REJECT
 # > 腾讯视频
-DOMAIN-suffix, tetrack.qq.com,REJECT
-DOMAIN-suffix, tpns.tencent.com,REJECT
-DOMAIN-suffix, api.poll.video.qq.com,REJECT
-DOMAIN-suffix, static-res.qq.com,REJECT
-DOMAIN-suffix, stat.tpns.tencent.com,REJECT
+DOMAIN-SUFFIX, tetrack.qq.com,REJECT
+DOMAIN-SUFFIX, tpns.tencent.com,REJECT
+DOMAIN-SUFFIX, api.poll.video.qq.com,REJECT
+DOMAIN-SUFFIX, static-res.qq.com,REJECT
+DOMAIN-SUFFIX, stat.tpns.tencent.com,REJECT
 DOMAIN, h.trace.qq.com,REJECT
 DOMAIN-KEYWORD, omgmta.qq.com,REJECT
 DOMAIN-KEYWORD, omgmta1.qq.com,REJECT
 # > 爱奇艺
 DOMAIN, cr-status.iqiyi.com,REJECT
-DOMAIN-suffix, cupid.iqiyi.com,REJECT
+DOMAIN-SUFFIX, cupid.iqiyi.com,REJECT
 DOMAIN, f74f7f7765f8a2f6.ngaa.net.cn,REJECT
 DOMAIN, ef-dongfeng.tanx.com,REJECT
 DOMAIN, iqiyim.adtrack.enlightent.cn,REJECT
@@ -1158,9 +1158,9 @@ DOMAIN, ads.nicovideo.jp,REJECT
 DOMAIN-SUFFIX, applovin.com,REJECT
 DOMAIN-SUFFIX, applvn.com,REJECT
 # > 多多视频
-DOMAIN-suffix, bayescom.com,REJECT
+DOMAIN-SUFFIX, bayescom.com,REJECT
 # > 车来了（包括小程序）
-DOMAIN-suffix, atrace.chelaile.net.cn,REJECT
+DOMAIN-SUFFIX, atrace.chelaile.net.cn,REJECT
 DOMAIN, logs.chelaile.net.cn,REJECT
 DOMAIN, ad.chelaile.net.cn,REJECT
 # > 铁路12306
