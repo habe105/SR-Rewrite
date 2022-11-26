@@ -1,5 +1,5 @@
 #!name=张军去广告(可乐修改版)
-#!desc=其他去广告  更新：2022-11-26 04:33:14
+#!desc=其他去广告  更新：2022-11-26 09:33:36
 #!system=ios
 
 [Rule]
@@ -225,7 +225,7 @@ DOMAIN-KEYWORD, editor.sm.cn,REJECT
 DOMAIN-KEYWORD, fc-video.cdn.bcebos.com,REJECT
 DOMAIN-KEYWORD, vs10.bj2ct.u3.ucweb.com,REJECT
 DOMAIN, navigis.uc.cn,REJECT
-DOMAIN, restapi.amap.com,REJECT
+DOMAIN, restapi.amap.com,DIRECT
 DOMAIN, order.sm.cn,REJECT
 DOMAIN, ucdc-upaas.uc.cn,REJECT
 DOMAIN, access.open.uc.cn,REJECT
