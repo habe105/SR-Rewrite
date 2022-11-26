@@ -1,5 +1,5 @@
 #!name=可乐vip解锁
-#!desc=更新：2022-11-25 20:55:55
+#!desc=更新：2022-11-26 10:43:16
 #!system=ios
 
 [Script]
@@ -16,6 +16,10 @@ SearchPicture = type=http-response,pattern=^https?:\/\/wallpaper\.soutushenqi\.c
 
 彩云天气_SVIP = type=http-response,pattern=^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/caiyun.js
 
+小组件盒子解锁VIP = type=http-response,pattern=^https:\/\/widget-box-api\.codefuture\.top\/v1\/users\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xzjhz.js
+
+
+
 [MITM]
 
-hostname = %APPEND%  *xiaozujian.com, commerce-api.faceu.mobi, pay.wecut.com, wallpaper.soutushenqi.com, api.revenuecat.com, buy.itunes.apple.com, biz.caiyunapp.com
+hostname = %APPEND%  *xiaozujian.com, commerce-api.faceu.mobi, pay.wecut.com, wallpaper.soutushenqi.com, api.revenuecat.com, buy.itunes.apple.com, biz.caiyunapp.com, widget-box-api.codefuture.top
