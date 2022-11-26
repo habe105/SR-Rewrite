@@ -1,5 +1,5 @@
 #!name=去广告联盟（可乐修改版）
-#!desc=更新：2022-11-26 05:34:05
+#!desc=更新：2022-11-26 10:16:11
 #!system=ios
 
 [Rule]
@@ -7,7 +7,7 @@
 URL-REGEX,^https:\/\/pgdt\.gtimg\.cn\/141\/20204\/snscosdownload\/SZ\/reserved\/[A-Za-z0-9]{48}\?m=\[A-Za-z0-9]{32}&ck=\[A-Za-z0-9]{32}\&sha256=\[A-Za-z0-9]{64},REJECT
 URL-REGEX,^https:\/\/pgdt\.gtimg\.cn\/\d{3}\/\d{5}\/snscosdownload\/[A-Z]+\/reserved\/[A-Za-z0-9]{48}\?m=\[A-Za-z0-9]{32}&ck=\[A-Za-z0-9]{32}\&sha256=\[A-Za-z0-9]{64},REJECT
 # >腾讯加速器
-URL-REGEX,^http:\/\/dldir1\.qq\.com\/INO\/img\/speedm\/[A-Za-z0-9]+\.jpg,REJECT
+URL-REGEX,^http:\/\/dldir1\.qq\.com\/INO\/img\/[A-Za-z0-9]+\/[A-Za-z0-9]+\.jpg,REJECT
 # > 高德地图去广告
 URL-REGEX,^http:\/\/optimus\-ads\.amap\.com/uploadimg\/[A-Za-z0-9]{30,32}.mp4,REJECT
 URL-REGEX,^http:\/\/optimus\-ads\.amap\.com/uploadimg\/[A-Za-z0-9]{30,32}.mp4,REJECT-TINYGIF
