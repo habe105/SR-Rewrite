@@ -1,5 +1,5 @@
 #!name=去广告联盟（可乐修改版）
-#!desc=更新：2022-11-28 17:18:16
+#!desc=更新：2022-11-28 17:32:35
 #!system=ios
 
 [Rule]
@@ -64,7 +64,7 @@ URL-REGEX,^https?+:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisemen
 # > 工银E生活
 URL-REGEX,^https?:\/\/image2\.elife\.icbc\.com\.cn\/filepath\/elife\/2022\/*\/*\/*\/.*.jpg,REJECT
 # > 掌上生活（设置打不开,8.5.10以上版本很多功能打不开,添加主机名生效）
-URL-REGEX,^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/AdPlatformPublic\/.*.(jpeg|jpg|png),REJECT
+URL-REGEX,^https?:\/\/res\.cc\.cmbimg\.com\/fsp\/File\/AdPlatformPublic,REJECT
 # > 招商银行
 URL-REGEX,^https?+:\/\/pic1cdn\.cmbchina\.com\/appinitads\/,REJECT
 URL-REGEX,^https?:\/\/resource\.cmbchina\.com\/fsp\/File\/ClientFacePublic\/.+.gif,REJECT
