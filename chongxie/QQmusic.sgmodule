@@ -1,9 +1,5 @@
 #!name = QQ音乐广告过滤
-#!desc = 过滤QQ音乐广告
-#!openUrl = 
-#!author = 可莉🅥
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
-#!icon = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Icon/80px/QQMusic.png
+#!desc = 过滤QQ音乐广告 2022-11-29 17:07:42
 
 [Rule]
 DOMAIN,tmeadcomm.y.qq.com,REJECT
@@ -19,7 +15,7 @@ DOMAIN-SUFFIX,beacon.qq.com,REJECT
 DOMAIN-SUFFIX,v.gdt.qq.com,REJECT
 
 
-[Url Rewrite]
+[URL Rewrite]
 
 ^https?:\/\/us\.l\.qq\.com\/exapp - reject
 ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
