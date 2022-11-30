@@ -1,5 +1,5 @@
 #!name=什么值得买去广告+签到
-#!desc=更新：2022-11-15 16:59:17
+#!desc=更新：2022-11-30 15:14:23
 #!system=ios
 
 [Rule]
@@ -53,7 +53,7 @@ URL-REGEX,^https?:\/\/app-api\.smzdm\.com\/util\/loading,REJECT
 
 什么值得买_值会员权益中心banner去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/smzdm_remove_ads.js
 
-什么值得买_每日签到 = script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/smzdm_checkin.js,timeout=120,type=cron,cronexp=5 0 * * *
+什么值得买_每日签到 = script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js,timeout=120,type=cron,cronexp=5 0 * * *
 
 什么值得买_获取cookie = script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/smzdm_checkin.js,type=http-request,requires-body=true,pattern=^https?:\/\/zhiyou\.smzdm\.com\/user$
 
