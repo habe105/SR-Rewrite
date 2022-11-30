@@ -30,4 +30,5 @@ Grow解锁永久会员 = type=http-response,pattern=^https?:\/\/api\.revenuecat\
 
 醒图会员= type=http-response,pattern=^http[s]?:\/\/.+((retouchpics)|(faceu)).(com|cn|mobi)\/.+user.*$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/Sta/main/Xtu.js
 
+[MITM]
 hostname = %APPEND% *xiaozujian.com, pay.wecut.com, wallpaper.soutushenqi.com, api.revenuecat.com, buy.itunes.apple.com, biz.caiyunapp.com, widget-box-api.codefuture.top, api.revenuecat.com, *.biliapi.*, *.bilibili.*, *music*, *xima*, *faceu*, *retouchpics*
