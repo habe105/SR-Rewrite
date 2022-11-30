@@ -1,5 +1,5 @@
 #!name=墨鱼去广告（可乐修改版）
-#!desc=去广告    2022-11-27 22:25:27
+#!desc=去广告    2022-11-30 08:24:11
 #!system=ios
 
 [Rule]
@@ -493,7 +493,7 @@ Keep热搜屏蔽1= type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/co
 
 顺风 = type=http-response,pattern=https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/shunfeng_json.js
 
-12306 = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=1,max-size=0,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/12306.js
+12306 = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/myBlockAds.js
 
 [MITM]
 
