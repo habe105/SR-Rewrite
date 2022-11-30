@@ -1,5 +1,5 @@
 #!name=可乐vip解锁
-#!desc=更新：2022-11-26 10:43:16
+#!desc=更新：2022-11-30 19:16:36
 #!system=ios
 
 [Script]
@@ -18,8 +18,8 @@ SearchPicture = type=http-response,pattern=^https?:\/\/wallpaper\.soutushenqi\.c
 
 小组件盒子解锁VIP = type=http-response,pattern=^https:\/\/widget-box-api\.codefuture\.top\/v1\/users\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xzjhz.js
 
-
+SparkMail解锁永久订阅 = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\w{14})$,requires-body=1,max-size=0,script-path=https://raw.fastgit.org/lhsll/Sta/main/SparkMailProCrack.js
 
 [MITM]
 
-hostname = %APPEND%  *xiaozujian.com, commerce-api.faceu.mobi, pay.wecut.com, wallpaper.soutushenqi.com, api.revenuecat.com, buy.itunes.apple.com, biz.caiyunapp.com, widget-box-api.codefuture.top
+hostname = %APPEND%  *xiaozujian.com, commerce-api.faceu.mobi, pay.wecut.com, wallpaper.soutushenqi.com, api.revenuecat.com, buy.itunes.apple.com, biz.caiyunapp.com, widget-box-api.codefuture.top, api.revenuecat.com
