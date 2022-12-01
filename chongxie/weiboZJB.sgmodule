@@ -1,5 +1,5 @@
 #!name=墨鱼微博国际版（可乐修改）
-#!desc=微博去广告  2022-12-1 08:00:29
+#!desc=微博去广告  2022-12-1 16:19:38
 #!system=ios
 
 [Rule]
@@ -30,7 +30,7 @@ URL-REGEX,^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php\?a=hot_search_
 
 
 [Map Local]
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info data=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/weibo_search_info.json
+^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info data="https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/weibo_search_info.json"
 
 [MITM]
 
