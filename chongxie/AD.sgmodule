@@ -1068,27 +1068,17 @@ URL-REGEX,^https?:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches,REJ
 URL-REGEX,^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/user\/teenager\/status,REJECT
 # > 去除微信公众号商品推广
 URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\?action,REJECT
+
 [URL Rewrite]
 # >  url 302 将前面的链接替换（重定向）为后面的链接
 https://image.spdbccc.com.cn/group2/M00/8B/67/rBsZJmJhUzuAYookAAPZXatr3Jc894.jpg https://gitee.com/a28413761/tupian/raw/master/ssyy1.jpg 302
-
 ctier=[A-Z] ctier=A 302
-
 (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
-
 ^https?://union.click.jd.com/jda? ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) $1/jda?adblock=$2union.click.jd.com$3 header
-
 ^https?://union.click.jd.com/sem.php? ^(.+?\s).+?(\s[\s\S]+?Host:).+?(\r\n) $1/sem.php?adblock=$2union.click.jd.com$3 header
-
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising  jdLiteAdvertisingVO header
-
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush url response-body pushData header 
-
 ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/ "ems_etao_advertise" response-body "" header
-
-
-
-
 
 [Script]
 

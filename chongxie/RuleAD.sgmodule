@@ -1,5 +1,5 @@
 #!name=张军去广告(可乐修改版)
-#!desc=其他去广告  更新：2022-11-28 15:58:55
+#!desc=其他去广告  更新：2022-12-2 21:43:19
 #!system=ios
 
 [Rule]
@@ -317,10 +317,6 @@ DOMAIN,ad.51wnl-cq.com,REJECT
 DOMAIN,adextra.51wnl-cq.com,REJECT
 DOMAIN,log.51wnl-cq.com,REJECT
 DOMAIN,r.51wnl-cq.com,REJECT
-
-# > 屏蔽苹果系统更新 已经拿出去单独配置
-# https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/apple.conf
-
 # > 优酷
 DOMAIN-SUFFIX,atm.youku.com,REJECT
 DOMAIN,ad.mobile.youku.com,REJECT
@@ -1128,13 +1124,6 @@ DOMAIN-KEYWORD,sf6-fe-tos.pglstatp-toutiao.com,REJECT
 DOMAIN-KEYWORD,s3-fe-scm.pglstatp-toutiao.com,REJECT
 DOMAIN-KEYWORD,sf6-be-pack.pglstatp-toutiao.com,REJECT
 DOMAIN-KEYWORD,p9-be-pack-sign.pglstatp-toutiao.com,REJECT
-# > 哔哩哔哩
-DOMAIN-SUFFIX,cm.bilibili.com,REJECT
-DOMAIN-KEYWORD, api.sobot.com,REJECT
-DOMAIN-SUFFIX,cm.ad.bilibili.com,REJECT
-DOMAIN-SUFFIX,cm.adcommon.bilibili.com,REJECT
-DOMAIN-SUFFIX,cm.game.bilibili.com,REJECT
-DOMAIN-SUFFIX,cm.track.biligame.bilibili.com,REJECT
 # > 快手
 # DOMAIN-SUFFIX,yximgs.com,REJECT
 DOMAIN-SUFFIX,e.kuaishou.com,REJECT
