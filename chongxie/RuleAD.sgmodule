@@ -7390,7 +7390,7 @@ DOMAIN-SUFFIX,sape.ru,REJECT
 DOMAIN-SUFFIX,sapi.sina.cn,REJECT
 DOMAIN-SUFFIX,savebt.net,REJECT
 DOMAIN-SUFFIX,saxxaz.taohuayuan8888.com,REJECT
-DOMAIN-SUFFIX,sb.scorecardresearch.com,REJECT
+#DOMAIN-SUFFIX,sb.scorecardresearch.com,REJECT
 DOMAIN-SUFFIX,sb88b.com,REJECT
 DOMAIN-SUFFIX,sbeacon.sina.com.cn,REJECT
 DOMAIN-SUFFIX,sbrqp.com,REJECT
