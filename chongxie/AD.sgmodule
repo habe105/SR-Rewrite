@@ -921,16 +921,16 @@ URL-REGEX,^https?:\/\/nnapp\.cloudbae\.cn\/mc\/api\/advert/,REJECT
 URL-REGEX,^https?:\/\/cdn\.kuaidi100\.com\/images\/open\/appads,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do,REJECT
 # > spotify音乐
-#URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+ad_slot,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+banners,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+crashlytics,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+doubleclick,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+enabled-tracks,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+event,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+promoted,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+sponsored,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ad-logic,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ads,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+ad_slot,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+banners,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+crashlytics,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+doubleclick,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+enabled-tracks,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+event,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+promoted,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/.+sponsored,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ad-logic,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ads,REJECT-TINYGIF
 # > 国美电器
 URL-REGEX,^ttps?:\/\/prom\.mobile\.gome\.com\.cn\/mobile\/promotion\/promscms\/\w+\.jsp,REJECT
 URL-REGEX,^ttps?:\/\/prom\.mobile\.gome\.com\.cn\/mobile\/promotion\/promscms\/sale\w+\.jsp,REJECT

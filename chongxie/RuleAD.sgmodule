@@ -161,7 +161,6 @@ DOMAIN-SUFFIX,cpatrk.net,REJECT
 # > 天神
 DOMAIN,track.tenjin.com,REJECT
 DOMAIN,track.tenjin.io,REJECT
-
 DOMAIN, lf9-cdn-tos.bytegecko.com,REJECT
 DOMAIN, novel.pangolin-sdk-toutiao.com,REJECT
 # > 高德
@@ -2341,7 +2340,7 @@ DOMAIN-SUFFIX,addthis.com,REJECT
 DOMAIN-SUFFIX,addthisedge.com,REJECT
 DOMAIN-SUFFIX,adeaz.com,REJECT
 DOMAIN-SUFFIX,ader.mobi,REJECT
-#DOMAIN-SUFFIX,adeventtracker.spotify.com,REJECT
+DOMAIN-SUFFIX,adeventtracker.spotify.com,REJECT
 DOMAIN-SUFFIX,adexprt.com,REJECT
 DOMAIN-SUFFIX,adf.dahe.cn,REJECT
 DOMAIN-SUFFIX,adfarm.mediaplex.com,REJECT
@@ -7390,7 +7389,7 @@ DOMAIN-SUFFIX,sape.ru,REJECT
 DOMAIN-SUFFIX,sapi.sina.cn,REJECT
 DOMAIN-SUFFIX,savebt.net,REJECT
 DOMAIN-SUFFIX,saxxaz.taohuayuan8888.com,REJECT
-#DOMAIN-SUFFIX,sb.scorecardresearch.com,REJECT
+DOMAIN-SUFFIX,sb.scorecardresearch.com,REJECT
 DOMAIN-SUFFIX,sb88b.com,REJECT
 DOMAIN-SUFFIX,sbeacon.sina.com.cn,REJECT
 DOMAIN-SUFFIX,sbrqp.com,REJECT
@@ -7489,7 +7488,7 @@ DOMAIN-SUFFIX,servicer.adskeeper.co.uk,REJECT
 DOMAIN-SUFFIX,serving-sys.com,REJECT
 DOMAIN-SUFFIX,setting.crashlytics.com,REJECT
 DOMAIN-SUFFIX,setting.rayjump.com,REJECT
-#DOMAIN-SUFFIX,settings.crashlytics.com,REJECT
+DOMAIN-SUFFIX,settings.crashlytics.com,REJECT
 DOMAIN-SUFFIX,sezvc.com,REJECT
 DOMAIN-SUFFIX,sfloushi.com,REJECT
 DOMAIN-SUFFIX,sgbfjs.info,REJECT
@@ -8370,7 +8369,7 @@ DOMAIN-SUFFIX,web.sogou.com,REJECT
 DOMAIN-SUFFIX,webd.home.news.cn,REJECT
 DOMAIN-SUFFIX,webdissector.com,REJECT
 DOMAIN-SUFFIX,webkooo.com,REJECT
-#DOMAIN-SUFFIX,weblb-wg.gslb.spotify.com,REJECT
+DOMAIN-SUFFIX,weblb-wg.gslb.spotify.com,REJECT
 DOMAIN-SUFFIX,webmaster.extabit.com,REJECT
 DOMAIN-SUFFIX,webmine.cz,REJECT
 DOMAIN-SUFFIX,webstat.ws.126.net,REJECT

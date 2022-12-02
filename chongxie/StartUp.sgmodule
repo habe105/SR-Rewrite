@@ -305,17 +305,17 @@ URL-REGEX,^https?:\/\/stat\.peopleapp\.com\/,REJECT
 # > 顺丰优选
 URL-REGEX,^https://mapi.sfbest.com\/brokerservice-server\/cms\/getPositionById.*,REJECT
 # > spotify@ddgksf2013
-#URL-REGEX,^https?://spclient.wg.spotify.com/ad-logic/*,REJECT-TINYGIF
-#URL-REGEX,^https?://spclient.wg.spotify.com/ads/*,REJECT-TINYGIF
-#URL-REGEX,^https?://spclient.wg.spotify.com/.+ad_slot,REJECT-TINYGIF
-#URL-REGEX,^https?://spclient.wg.spotify.com/.+banners,REJECT-TINYGIF
-#URL-REGEX,^https?://spclient.wg.spotify.com/.+canvases,REJECT-TINYGIF
-#URL-REGEX,^https?://spclient.wg.spotify.com/.+cards,REJECT-TINYGIF
-#URL-REGEX,^https?://spclient.wg.spotify.com/.+crashlytics,REJECT-TINYGIF
-#URL-REGEX,^https?://spclient.wg.spotify.com/.+doubleclick.net,REJECT-TINYGIF
-#URL-REGEX,^https?://spclient.wg.spotify.com/.+enabled-tracks,REJECT-TINYGIF
-#URL-REGEX,^https?://spclient.wg.spotify.com/.+promoted_offer,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/api\d?\.musical\.ly\/api\/ad\/,REJECT-TINYGIF
+URL-REGEX,^https?://spclient.wg.spotify.com/ad-logic/*,REJECT-TINYGIF
+URL-REGEX,^https?://spclient.wg.spotify.com/ads/*,REJECT-TINYGIF
+URL-REGEX,^https?://spclient.wg.spotify.com/.+ad_slot,REJECT-TINYGIF
+URL-REGEX,^https?://spclient.wg.spotify.com/.+banners,REJECT-TINYGIF
+URL-REGEX,^https?://spclient.wg.spotify.com/.+canvases,REJECT-TINYGIF
+URL-REGEX,^https?://spclient.wg.spotify.com/.+cards,REJECT-TINYGIF
+URL-REGEX,^https?://spclient.wg.spotify.com/.+crashlytics,REJECT-TINYGIF
+URL-REGEX,^https?://spclient.wg.spotify.com/.+doubleclick.net,REJECT-TINYGIF
+URL-REGEX,^https?://spclient.wg.spotify.com/.+enabled-tracks,REJECT-TINYGIF
+URL-REGEX,^https?://spclient.wg.spotify.com/.+promoted_offer,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/api\d?\.musical\.ly\/api\/ad\/,REJECT-TINYGIF
 # > 三联中读开屏广告@ddgksf2013
 DOMAIN,https://apis.lifeweek.com.cn/api/baseConfig/getIosNewConfig,REJECT
 # > 顺丰APP屏蔽更新@ddgksf2013
