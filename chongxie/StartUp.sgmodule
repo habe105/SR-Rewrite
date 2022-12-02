@@ -1,5 +1,5 @@
 #!name=墨鱼去广告（可乐修改版）
-#!desc=去广告    2022-12-2 21:34:39
+#!desc=去广告    2022-12-2 23:19:13
 #!system=ios
 
 [Rule]
@@ -306,7 +306,7 @@ URL-REGEX,^https?:\/\/stat\.peopleapp\.com\/,REJECT
 URL-REGEX,^https://mapi.sfbest.com\/brokerservice-server\/cms\/getPositionById.*,REJECT
 # > spotify@ddgksf2013
 URL-REGEX,^https?://spclient.wg.spotify.com/ad-logic/*,REJECT-TINYGIF
-URL-REGEX,^https?://spclient.wg.spotify.com/ads/*,REJECT-TINYGIF
+#URL-REGEX,^https?://spclient.wg.spotify.com/ads/*,REJECT-TINYGIF
 URL-REGEX,^https?://spclient.wg.spotify.com/.+ad_slot,REJECT-TINYGIF
 URL-REGEX,^https?://spclient.wg.spotify.com/.+banners,REJECT-TINYGIF
 URL-REGEX,^https?://spclient.wg.spotify.com/.+canvases,REJECT-TINYGIF
