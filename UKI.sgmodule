@@ -1,0 +1,14 @@
+#!name=UKI去广告
+#!desc=自制  更新：2022年12月1日16:14:39
+#!system=ios
+
+
+[Map Local]
+
+^http+:\/\/ukiapi567\.neoclub\.cn\/v1\/friends\/startInfo data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-dict.json" 
+^http:\/\/xiaoredpic\.neoclub\.cn\/backend\/activityPack\/\d{11}_\d{13}\_\d{1}_[A-Za-z0-9]+\.png data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-200.txt" 
+^http:\/\/xiaoredpic\.neoclub\.cn\/backend\/activityIcon\/gray\/.+?\.png data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-200.txt" 
+
+
+[MITM]
+hostname = %APPEND% ukiapi567.neoclub.cn, xiaoredpic.neoclub.cn
