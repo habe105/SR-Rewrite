@@ -7489,7 +7489,7 @@ DOMAIN-SUFFIX,servicer.adskeeper.co.uk,REJECT
 DOMAIN-SUFFIX,serving-sys.com,REJECT
 DOMAIN-SUFFIX,setting.crashlytics.com,REJECT
 DOMAIN-SUFFIX,setting.rayjump.com,REJECT
-DOMAIN-SUFFIX,settings.crashlytics.com,REJECT
+#DOMAIN-SUFFIX,settings.crashlytics.com,REJECT
 DOMAIN-SUFFIX,sezvc.com,REJECT
 DOMAIN-SUFFIX,sfloushi.com,REJECT
 DOMAIN-SUFFIX,sgbfjs.info,REJECT
