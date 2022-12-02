@@ -1,5 +1,5 @@
 #!name=可乐vip解锁
-#!desc=更新：2022-12-1 00:27:51
+#!desc=更新：2022-12-3 00:14:45
 #!system=ios
 
 [Script]
@@ -28,8 +28,8 @@ Grow解锁永久会员 = type=http-response,pattern=^https?:\/\/api\.revenuecat\
 
 喜马拉雅 会员 = type=http-response,pattern=^http[s]?:\/\/.+ximalaya.+(product/info|/mobile-user/v2/homePage|/vip/v1/recommand/ts|mobile-playpage/playpage/tabs|/mobile-album/album/page/ts|mobile/v1/album/track/ts|product/promotion/v./whole/album/\d+/price/dynamic/ts|business-vip-presale-mobile-web/page/ts).*$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/Sta/main/ximalaya.js
 
-
+spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/spotify-proto.js
 
 [MITM]
-hostname = %APPEND% *xiaozujian.com,commerce-api.faceu.mobi, pay.wecut.com, wallpaper.soutushenqi.com, api.revenuecat.com, buy.itunes.apple.com, biz.caiyunapp.com, widget-box-api.codefuture.top, api.revenuecat.com, *.biliapi.*, *.bilibili.*, *music*, *xima*
+hostname = %APPEND% *xiaozujian.com,commerce-api.faceu.mobi, pay.wecut.com, wallpaper.soutushenqi.com, api.revenuecat.com, buy.itunes.apple.com, biz.caiyunapp.com, widget-box-api.codefuture.top, api.revenuecat.com, *.biliapi.*, *.bilibili.*, *music*, *xima*, spclient.wg.spotify.com
 
