@@ -1,5 +1,5 @@
 #!name=可乐vip解锁
-#!desc=更新：2022-12-3 01:08:07
+#!desc=更新：2022-12-3 20:22:13
 #!system=ios
 
 [Script]
@@ -20,6 +20,9 @@ SparkMail解锁永久订阅 = type=http-response,pattern=^https?:\/\/api\.revenu
 
 Grow解锁永久会员 = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/Sta/main/GrowForeverVipCrack.js
 
+ 简讯解锁会员= type=http-response,pattern=^https?:\/\/api\.tipsoon\.com\/api\/v1\/user\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/Sta/main/JianXunProCrack.js
+
+
 [MITM]
-hostname = %APPEND% *xiaozujian.com,commerce-api.faceu.mobi, pay.wecut.com, wallpaper.soutushenqi.com, api.revenuecat.com, buy.itunes.apple.com, biz.caiyunapp.com, widget-box-api.codefuture.top, api.revenuecat.com,
+hostname = %APPEND% *xiaozujian.com,commerce-api.faceu.mobi, pay.wecut.com, wallpaper.soutushenqi.com, api.revenuecat.com, buy.itunes.apple.com, biz.caiyunapp.com, widget-box-api.codefuture.top, api.revenuecat.com, api.tipsoon.com
 
