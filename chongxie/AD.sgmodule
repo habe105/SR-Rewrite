@@ -1,5 +1,5 @@
 #!name=去广告联盟（可乐修改版）
-#!desc=更新：2022-12-2 23:09:50
+#!desc=更新：2022-12-5 15:52:25
 #!system=ios
 
 [Rule]
@@ -30,6 +30,7 @@ URL-REGEX,^http:\/\/optimus\-ads\.amap\.com\/uploadimg\/[A-Za-z0-9]{31,32}\.gif,
 # > 淘宝去广告
 URL-REGEX,^https:\/\/heic\.alicdn\.com\/imgextra\/i\d\/\d{13}\/[A-Za-z0-9]{23,24}\_!!\d{13}\.(jpg|png|gif|mp4|wepb)\_\d{2,4}\x\d{2,4}\q\d{2,3}\.(jpg|png|gif|mp4|wepb)\_.heic,REJECT
 URL-REGEX,^https:\/\/heic\.alicdn\.com\/imgextra\/i\d\/[A-Za-z0-9]{23}\_!!\d{13}\-\d\-tps\-\d{4}\-\d{4}\.jpg\_\d{4}x\d{4}\q90\.jpg\_\.heic,REJECT
+URL-REGEX,^https:\/\/gw\.alicdn\.com\/imgextra\/i\d{1}\/.{1,52}\.(png|jpg|gif),REJECT
 # >中国移动
 URL-REGEX,^https:\/\/res\.app\.coc\.10086\.cn\/group\d\/M00\/00\/[A-Za-z0-9]{2}\/[A-Za-z0-9]{30}\.(png|jpg),REJECT
 URL-REGEX,^https:\/\/res\.app\.coc\.10086\.cn\/group\d\/M00\/00\/54\/[A-Za-z0-9]{24}\_[A-Za-z0-9]{5}.(jpg|png),REJECT
