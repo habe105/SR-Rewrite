@@ -1,5 +1,5 @@
 #!name=张军去广告(可乐修改版)
-#!desc=其他去广告  更新：2022-12-2 23:09:32
+#!desc=其他去广告  更新：2022-12-9 00:33:54
 #!system=ios
 
 [Rule]
@@ -1183,7 +1183,7 @@ DOMAIN-KEYWORD,sdfp.snssdk.com,REJECT
 DOMAIN-KEYWORD,tosv.boe.byted.org,REJECT
 DOMAIN-KEYWORD,tosv.byted.org,REJECT
 DOMAIN-KEYWORD,ad.ihuman.com,REJECT
-DOMAIN-KEYWORD,errlog.umeng.com,REJECT
+#~DOMAIN-KEYWORD,errlog.umeng.com,REJECT
 DOMAIN,delivery-node-aziz.voe-network.net,REJECT
 DOMAIN,inspiringaccurate.com,REJECT
 DOMAIN,track.aso1.net,REJECT
