@@ -1,5 +1,5 @@
 #!name= bilibiliAD重构版（可乐修改）
-#!desc= 哔哩哔哩终极版   2022-12-8 22:14:57
+#!desc= 哔哩哔哩终极版   2022-12-8 23:07:34
 [Rule]
 # > 哔哩哔哩
 DOMAIN-SUFFIX,cm.bilibili.com,REJECT
@@ -19,6 +19,11 @@ URL-REGEX,^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/splash\/list, RE
 URL-REGEX,^https:\/\/app.bilibili.com\/x\/v2\/(splash|search)\/(defaultword|square),REJECT
 URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/dm\/ad,REJECT
 URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v\d\/splash\/,REJECT
+# ～ BiliBili_哔哩哔哩_屏蔽直播间商品广告浮窗@ddgksf2013
+URL-REGEX,^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\?,REJECT
+# ～ BiliBili_哔哩哔哩_屏蔽广告浮窗@ddgksf2013
+URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive,REJECT
+
 [URL Rewrite]
 ^http:\/\/optimus-ads\.amap\.com\/uploadimg\/[A-Za-z0-9]+\.gif$ - reject
 ^http:\/\/optimus-ads\.amap\.com\/uploadimg\/[A-Za-z0-9]+\.jpg$ - reject
