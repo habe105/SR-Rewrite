@@ -71,5 +71,7 @@ bili-json = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(s
 
 bili-proto = type=http-response,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js, requires-body=true, binary-body-mode=true, timeout=10
 
+http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+
 [MITM]
 hostname = %APPEND% app.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, api.bilibili.com, manga.bilibili.com, grpc.biliapi.net, api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, optimus-ads.amap.com,
