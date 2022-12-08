@@ -108,4 +108,4 @@ bili-json = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(s
 # 繁体CC字幕转中文简体 = type=http-response,pattern=^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$ ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_cc.js
 
 [MITM]
-hostname = %APPEND% app.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, api.bilibili.com, manga.bilibili.com, grpc.biliapi.net, api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net,  optimus-ads.amap.com,
+hostname = %APPEND% app.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, api.bilibili.com, manga.bilibili.com, grpc.biliapi.net, api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, optimus-ads.amap.com,
