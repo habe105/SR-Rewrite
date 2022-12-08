@@ -1,5 +1,5 @@
 #!name=bilibiliAD墨鱼（可乐修改版）
-#!desc=哔哩哔哩去广告  更新：2022-12-8 20:13:38
+#!desc=哔哩哔哩去广告  更新：2022-12-8 20:56:47
 #!system=ios
 
 //更新日志：Made by ddgksf2013
@@ -69,17 +69,17 @@
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash) data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-dict.json"
 
 [Script]
-屏蔽首页右上活动 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
-观影页面去广告 = type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\? ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
-应用开屏广告预加载 = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
-去除统一设置的皮肤 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
-1080P高码率+4K画质 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
-热搜发现 = type=http-response,pattern=^https://app.bilibili.com/x/v2/search/square ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
-推荐去广告= type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
-追番去广告 = type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
-直播去广告 = type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
-标签页处理 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
-我的页面处理 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_json.js
+屏蔽首页右上活动 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+观影页面去广告 = type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\? ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+应用开屏广告预加载 = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+去除统一设置的皮肤 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+1080P高码率+4K画质 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+热搜发现 = type=http-response,pattern=^https://app.bilibili.com/x/v2/search/square ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+推荐去广告= type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+追番去广告 = type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/bangumi ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+直播去广告 = type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+标签页处理 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
+我的页面处理 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
 Proto去广告 = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$ ,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_proto.js
 # 直连模式= type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/domain ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_startup_direct.js
 # 繁体CC字幕转中文简体 = type=http-response,pattern=^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$ ,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/bilibili_cc.js
