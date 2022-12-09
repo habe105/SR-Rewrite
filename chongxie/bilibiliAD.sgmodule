@@ -1,5 +1,5 @@
 #!name=bilibiliAD重构版
-#!desc=哔哩哔哩  更新：2022-12-9 10:25:54
+#!desc=哔哩哔哩  更新：  2022-12-9 10:32:37
 #!system=ios
 [Rule]
 URL-REGEX,^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\?,REJECT
