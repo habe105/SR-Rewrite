@@ -1,5 +1,5 @@
 #!name=bilibiliAD重构版
-#!desc=哔哩哔哩  更新：2022-12-9 10:09:14
+#!desc=哔哩哔哩  更新：2022-12-9 10:25:54
 #!system=ios
 [Rule]
 URL-REGEX,^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\?,REJECT
@@ -10,25 +10,18 @@ URL-REGEX,^https://app.bilibili.com/x/v2/splash/show,REJECT
 URL-REGEX,^https://app.bilibili.com/x/v2/search/defaultwords,REJECT
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/vip\/ads\/material\/report,REJECT
 URL-REGEX,^https://api.bilibili.com/pgc/season/player/cards,REJECT
-URL-REGEX,^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr,REJECT
 URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash),REJECT
 DOMAIN-SUFFIX,cm.bilibili.com,REJECT
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
-# 可能的一些推广(beta)
-URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?,REJECT
 [URL Rewrite]
 # 可能的一些推广(beta)
 ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject
-^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\? - reject
-^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive - reject
-^https?:\/\/app\.bilibili\.com\/x\/resource\/ip - reject
-^https?:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Search\/Default - reject
-^https://app.bilibili.com/x/v2/splash/show - reject
-^https://app.bilibili.com/x/v2/search/defaultwords - reject
-^https?:\/\/api\.bilibili\.com\/x\/vip\/ads\/material\/report - reject
-^https://api.bilibili.com/pgc/season/player/cards - reject
+# 去除搜索中的大家都在搜
+^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
+# 去除动态中的话题
 ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject
-^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash) - reject
+# 去除动态中的最常访问
+^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject
 [Script]
 屏蔽首页右上活动 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
 观影页面去广告 = type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
