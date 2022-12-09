@@ -1,5 +1,5 @@
 #!name=bilibiliAD重构版
-#!desc=哔哩哔哩  更新：2022-12-9 09:44:14
+#!desc=哔哩哔哩  更新：2022-12-9 09:57:27
 #!system=ios
 [Rule]
 URL-REGEX,^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\?,REJECT
@@ -16,20 +16,11 @@ DOMAIN-SUFFIX,cm.bilibili.com,REJECT
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
 # 可能的一些推广(beta)
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?,REJECT
-# BiliBili漫画去广告
-URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.comic\/flash,REJECT
 [URL Rewrite]
 # 去除搜索中的大家都在搜
 ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
-# 去除动态中的话题
-^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject
-# 去除动态中的最常访问
-^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject
 # 可能的一些推广(beta)
 ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject
-# BiliBili漫画去广告
-^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash - reject
-^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash - reject
 [Map Local]
 ^https?:\/\/api\.bilibili\.com\/x\/web-interface\/zone\?jsonp=jsonp$ data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-array.json"
 [Script]
@@ -45,7 +36,6 @@ URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.comic\/flash,REJE
 标签页处理 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
 我的页面 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
 bilibili-proto = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_proto.js
-BiliBili_动态去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
 [MITM]
 hostname = %APPEND% app.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, api.bilibili.com, manga.bilibili.com, grpc.biliapi.net, api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net,
 
