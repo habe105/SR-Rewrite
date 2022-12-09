@@ -1,5 +1,5 @@
 #!name=bilibiliAD重构版
-#!desc=哔哩哔哩  更新：2022-12-9 09:59:34
+#!desc=哔哩哔哩  更新：2022-12-9 10:09:14
 #!system=ios
 [Rule]
 URL-REGEX,^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\?,REJECT
@@ -17,10 +17,18 @@ URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
 # 可能的一些推广(beta)
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?,REJECT
 [URL Rewrite]
-# 去除搜索中的大家都在搜
-^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
 # 可能的一些推广(beta)
 ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject
+^https?:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v\d\/ecommerce-user\/get_shopping_info\? - reject
+^https?:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive - reject
+^https?:\/\/app\.bilibili\.com\/x\/resource\/ip - reject
+^https?:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Search\/Default - reject
+^https://app.bilibili.com/x/v2/splash/show - reject
+^https://app.bilibili.com/x/v2/search/defaultwords - reject
+^https?:\/\/api\.bilibili\.com\/x\/vip\/ads\/material\/report - reject
+^https://api.bilibili.com/pgc/season/player/cards - reject
+^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash) - reject
 [Script]
 屏蔽首页右上活动 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
 观影页面去广告 = type=http-response,pattern=^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontents.com/lhsll/CQY/main/Script/bilibili_json.js
