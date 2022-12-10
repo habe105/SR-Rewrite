@@ -3,17 +3,16 @@
 
 [Panel]
 Panel = title=TributePaulWalker, content=GitHub:https://github.com/TributePaulWalker,icon=aqi.medium,icon-color=#5AC8FA
-
 节假日倒计时 = script-name=节假日倒计时,update-interval=600
-
-网络信息 = script-name=网络信息,title=网络信息,content=请刷新,style=info,update-interval=60
-
-配置重载 = title=配置重载,content=配置重载,style=info,script-name=配置重载,update-interval=-1
-
-
+网络信息 = script-name=netinfo,title="网络状态",content="请刷新",style=info,update-interval=0
+functionstatus = script-name=functionstatus, title="Surge", content="请刷新", update-interval=0
+netflix = script-name=netflix,title="Netflix解锁检测", content="请刷新", update-interval=0
+youtube = script-name=youtube,title="YouTube解锁检测", content="请刷新", update-interval=0
+ipinfo = script-name=ipinfo, title="节点信息", content="请刷新", style=info, update-interval=0
 [Script]
 节假日倒计时 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/Timecard.js
-
-网络信息 = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/ipcheck.js
-
-配置重载 = script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/Profile-Reload.js,type=generic
+网络信息 = script-path=https://raw.githubusercontent.com/foloooxx/Surge/main/Panel/netinfo.js,type=generic
+youtube = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/foloooxx/Surge/main/Panel/youtube.js
+netflix = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/foloooxx/Surge/main/Panel/netflix.js
+ipinfo = type=generic,timeout=3,script-path=https://raw.githubusercontent.com/foloooxx/Surge/main/Panel/ipinfo.js
+functionstatus = type=generic,script-path=https://raw.githubusercontent.com/foloooxx/Surge/main/Panel/functionstatus.js
