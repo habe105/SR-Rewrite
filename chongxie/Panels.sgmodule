@@ -7,13 +7,14 @@
 #流量统计
 TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 functionstatus = script-name=functionstatus, title="Surge", content="请刷新", update-interval=0
-ipinfo = script-name=ipinfo, title="节点信息", content="请刷新", style=info, update-interval=0
+#节点检测
+ipcheck = script-name=ipcheck, title="节点信息", content="请刷新", style=info, update-interval=1
 策略面板 = script-name=解锁检测,update-interval=7200
 [Script]
 节假日倒计时 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/Timecard.js
-网络信息 = script-path=https://raw.githubusercontent.com/foloooxx/Surge/main/Panel/netinfo.js,type=generic
+网络信息 = script-path=https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/Net-info-panel.js,type=generic
 解锁检测 = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/Stream-All.js,script-update-interval=0,argument=title=解锁检测&icon=headphones.circle&color=#FF2121
-ipinfo = type=generic,timeout=3,script-path=https://raw.githubusercontent.com/foloooxx/Surge/main/Panel/ipinfo.js
-functionstatus = type=generic,script-path=https://raw.githubusercontent.com/foloooxx/Surge/main/Panel/functionstatus.js
+#节点检测
+ipcheck = type=generic,timeout=3,script-path=https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/ipcheck.js
 #流量统计 点击以切换网络界面
 TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
