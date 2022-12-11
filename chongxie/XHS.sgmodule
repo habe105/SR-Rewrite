@@ -1,5 +1,5 @@
 #!name=小红书AD（可乐修改）
-#!desc=墨鱼   2022-12-1 08:14:44
+#!desc=墨鱼   2022-12-11 16:24:53
 #!system=ios
 
 [Script]
@@ -8,7 +8,7 @@
 小红书 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\?,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/xiaohongshu.js
 小红书 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\?,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/CQY/main/Script/xiaohongshu.js
 
-小红书_热词删除 = type=http-response,argument=items":\[.+\]->items":[],pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hot_list,requires-body=1,max-size=0,script-path=https://github.moeyy.xyz/https://raw.githubusercontent.com/lhsll/Plao/main/replace-body.js,script-update-interval=0
+小红书_热词删除 = type=http-response,argument=items":\[.+\]->items":[],pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hot_list,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/lhsll/Plao/main/replace-body.js,script-update-interval=0
 
 小红书_热搜删除 = type=http-response,argument=queries":\[.+\]->queries":[],pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/trending,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js,script-update-interval=0
 
