@@ -1,5 +1,5 @@
 #!name=去广告联盟（可乐修改版）
-#!desc=更新：s2022-12-12 02:02:04
+#!desc=更新：2022-12-12 08:04:08
 #!system=ios
 [General]
 force-http-engine-hosts =  %APPEND% webappcfg.paas.cmbchina.com, res.cc.cmbimg.com
