@@ -1,8 +1,7 @@
 #!name=去广告联盟（可乐修改版）
-#!desc=更新：2022-12-12 08:04:08
+#!desc=更新：2022-12-12 09:37:23
 #!system=ios
-[General]
-force-http-engine-hosts =  %APPEND% webappcfg.paas.cmbchina.com, res.cc.cmbimg.com
+
 [Rule]
 # >QQ音乐
 URL-REGEX,^https:\/\/pgdt\.gtimg\.cn\/141\/20204\/snscosdownload\/SZ\/reserved\/[A-Za-z0-9]{48}\?m=\[A-Za-z0-9]{32}&ck=\[A-Za-z0-9]{32}\&sha256=\[A-Za-z0-9]{64},REJECT
