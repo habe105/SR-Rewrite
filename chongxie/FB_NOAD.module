@@ -1,0 +1,17 @@
+#!name=FB去广告
+#!desc=@TPCTPCTPC
+#!system=ios
+
+[Rule]
+^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js - reject-200
+^https?:\/\/graph\.facebook\.com\/.+activities - reject-200
+^https?:\/\/graph\.facebook\.com\/.+advertiser_id=* - reject-200
+^https?:\/\/graph\.facebook\.com\/.+events - reject-200
+^https?:\/\/graph\.facebook\.com\/network_ads_common\/* - reject-200
+^https?:\/\/www\.facebook\.com\/adnw_logging\/* - reject-200
+^https?:\/\/www\.facebook\.com\/adnw_sync\/* - reject-200
+^https?:\/\/www\.facebook\.com\/tr - reject-200
+
+[MITM]
+
+hostname = %APPEND% connect.facebook.net,www.facebook.com
