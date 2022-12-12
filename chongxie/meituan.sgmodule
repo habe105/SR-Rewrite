@@ -31,16 +31,16 @@ URL-REGEX,^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp,REJECT
 [Map Local]
 
 # > 美团
-^https?+:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
-^https?+:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+?\.jpg data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
-^https?+:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+?\.jpg\?may_covertWebp data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
-^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002 data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
-^https?:\/\/p\d.meituan.net\/movie\/.*?\?may_covertWebp data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
+^https?+:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-200.txt"
+^https?+:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+?\.jpg data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-200.txt"
+^https?+:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+?\.jpg\?may_covertWebp data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-200.txt"
+^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002 data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-200.txt"
+^https?:\/\/p\d.meituan.net\/movie\/.*?\?may_covertWebp data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-200.txt"
 # > 美团外卖
-^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
-^https?:\/\/img\.meituan\.net\/bizad\/.*.jpg data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
+^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-200.txt"
+^https?:\/\/img\.meituan\.net\/bizad\/.*.jpg data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-200.txt"
 # > 美团众包
-^https?:\/\/peisongapi\.meituan\.com\/client\/getInitiateImage data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
+^https?:\/\/peisongapi\.meituan\.com\/client\/getInitiateImage data="https://raw.githubusercontents.com/lhsll/Plao/main/reject-200.txt"
 
 [MITM]
 hostname = %APPEND% s3plus.meituan.net, www.meituan.com, wmapi.meituan.com, flowplus.meituan.net, apimobile.meituan.com, img.meituan.net, peisongapi.meituan.com, p*.meituan.net
