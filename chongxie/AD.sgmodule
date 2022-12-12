@@ -3,6 +3,7 @@
 #!system=ios
 [General]
 force-http-engine-hosts =  %APPEND% webappcfg.paas.cmbchina.com, res.cc.cmbimg.com
+[Rule]
 # >QQ音乐
 URL-REGEX,^https:\/\/pgdt\.gtimg\.cn\/141\/20204\/snscosdownload\/SZ\/reserved\/[A-Za-z0-9]{48}\?m=\[A-Za-z0-9]{32}&ck=\[A-Za-z0-9]{32}\&sha256=\[A-Za-z0-9]{64},REJECT
 URL-REGEX,^https:\/\/pgdt\.gtimg\.cn\/\d{3}\/\d{5}\/snscosdownload\/[A-Z]+\/reserved\/[A-Za-z0-9]{48}\?m=\[A-Za-z0-9]{32}&ck=\[A-Za-z0-9]{32}\&sha256=\[A-Za-z0-9]{64},REJECT
